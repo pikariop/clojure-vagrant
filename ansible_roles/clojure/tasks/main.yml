@@ -1,0 +1,10 @@
+---
+
+- name: Install Leiningen
+  get_url: url={{ leiningen_url }}
+           dest=~/bin/lein
+           mode=0755
+
+# todo setup PATH
+
+# todo run 'lein help'
