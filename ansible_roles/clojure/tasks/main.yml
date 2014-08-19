@@ -1,10 +1,20 @@
 ---
 
+- name: Ensure bin dir present
+  file: name=~/bin
+        state=directory
+        mode=0750
+  sudo: false
+
 - name: Install Leiningen
   get_url: url={{ leiningen_url }}
            dest=~/bin/lein
-           mode=0755
+           mode=0750
+  sudo: false
+
+- name: Run lein
+  shell: ~/bin/lein help
+  sudo: false
 
 # todo setup PATH
 
-# todo run 'lein help'
