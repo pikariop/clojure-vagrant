@@ -1,0 +1,12 @@
+---
+
+apt_pkgs:
+  - build-essential
+  - zsh
+  - git
+  - curl
+  - tmux
+  - htop
+  - multitail
+  - vim
+  - openjdk-7-jdk
