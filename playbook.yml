@@ -1,0 +1,9 @@
+---
+
+- hosts: megatunkki
+  user: vagrant
+  sudo: yes
+
+  roles:
+    - ubuntu-utils
+    - clojure
